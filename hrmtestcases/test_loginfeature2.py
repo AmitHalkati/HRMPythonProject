@@ -14,5 +14,9 @@ class Test_login:
         self.login_page.login(Username, Password)
         assert 2 ==4
 
+    def test_valid_login3(self):
+        self.login_page.login(Username, Password)
+        assert 2 ==2
+
     def teardown_class(self):
         self.driver.quit()
